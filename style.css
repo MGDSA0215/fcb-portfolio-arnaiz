@@ -1,0 +1,98 @@
+/*
+	To Add Comment in CSS
+	Ctrl + Shift + /
+
+	CSS (Cascading Style Sheet)
+	-used to add styling in the webpage
+	-it has it's own Syntax or way of coding writing from HTML
+
+	Syntax:
+	* - selector
+
+	- declaration block
+	*{
+		property: value;
+	}
+		property - specifies what to style of the targeted HTML elements
+		value 	 - allows following types of values
+				 - definition syntax, a formal grammar, is used for defining the set of valid values for a CSS property or function
+		default font is Times New Roman
+		semicolon ends the declaration
+*/
+
+/*universal - all elements*/
+* {
+	font-family: "Roboto", sans-serif;
+}
+/*type - select particular tags*/
+h1,h2
+{
+	font-family: "Montserrat",sans-serif;
+}
+img
+/* px - pixel: measurement for images,
+the smallest item of information in an image*/
+{
+	height: 250px;
+	width: 250px;
+}
+
+#landing
+{
+	/*vh - viewport height: measurement based on the height of the 
+web page and the device you're currently viewing the page in*/
+	height: 80vh;
+	/*flex - manipulate the contents of an element using flexbox*/
+	/*by default arranges the content of an element in a row*/
+	display: flex;
+	/*Arrange the content of an element with flex as a column*/
+	flex-direction: column;
+	/*center all contents of an element with flex as a column
+	horizontaly*/
+	align-items: center;
+	/*center all contents of an element with flex as a column
+	vertically*/
+	justify-content: center;
+}
+#gallery
+{
+	height: 75vh;
+	/*center the contents of the #gallery section horizontally and vertically*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+ul
+{
+	list-style: none;
+	padding: 0;
+
+}
+h2
+{
+	/*hex decimal can be added as a value for color. This will allow us to specify a particular color*/
+	color: #007bff
+}
+
+/*class selector - .className*/
+.tools
+{
+	/*px- defines the weight of the line*/
+	/*solid: defines the style of the border*/
+	/*hex decimal defines the color of the line*/
+	border: 5px solid #f2f2f2;
+	/*space inside the box*/
+	/*margine defines the space outside the box*/
+	padding: 25px;
+	margin: 20px;
+	height: 200px;
+	/*width of this element is at least 75% of its parent element or the element that contains.*/
+	width: 75%
+}
+
+html
+{
+	scroll-behavior: smooth;
+}

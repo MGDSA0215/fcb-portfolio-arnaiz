@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- technique: type html and press Tab -->
+<!-- very first line in the HTML document. It tells the browser what version of HTML the document is written so that the browser knows what to expect -->
+<!-- <html> is the root element and it defines the whole HTML document -->
+<html>
+<!-- <head> the first section of the document and contains information that is shared by all the pages in the document but not displayed on the web browser when the page is loaded -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Web page Title -->
+	<title>Mark Gil DS Arnaiz | Developer Portfolio</title>
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+	<!-- Boostrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<!-- end of HTML Head -->
+<!-- <body> the container for all renderable aspects of a document -->
+<body>
+	<!-- Ctrl + Shift + / use to add comments -->
+	<!-- <div> defines a division or a section in an HTML document -->
+	<!-- class: an attribute which specifies one or more class names for an HTML element -->
+	<!-- container: a code snippet used in web development that removes the need for multiple data tracking codes being placed directly on the site -fluid use to occupy the entire space of the page -->
+	<!-- Navigation Bar -->
+	<!-- Navigation Bar = List of Links. A navigation bar needs standard HTML as a base -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+		<!-- navbar-expand-lg: stacks the NavBar vertically on extra large, large, medium or small screens -->
+		<!-- navbar-dark: specifies the background colors-->
+		<!-- bg-primary: specifies the color of the NavBar -->
+		<!-- sticky-top: makes the NavBar stick at the top -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolio-nav">
+			<span class="navbar-toggler-icon"></span>
+			<!-- span: a generic inline container element. Span tags usually wrap sections of text for styling purposes or for adding attributes to a section of text without creating a new line of content -->
+		</button>
+		<div class="collapse navbar-collapse" id="portfolio-nav">
+			<!-- navbar collapse: the component which wraps the remain components of the navbar -->
+			<ul class="navbar-nav mx-auto">
+				<!-- navbar-nav:standard navigation bar -->
+				<!-- mx-auto: horizontally centering fixed-width block level content -->
+				<!-- ml-auto: push items to the right -->
+				<!-- mr-auto: push items to the left -->
+				<li>
+					<a class="nav-link" href="#landing">Home</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#gallery">Gallery</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Division -->
+	<div class="container-fluid">
+		<!-- <section> defines a section in a document -->
+		<!-- starting section of landing -->
+		<section id="landing" class="text-center jumbotron bg-transparent mt-3">
+			<!-- bg: background color, text-white: text color, mt: margin top outside the element -->
+			<!-- jumbotron: indicates a big box for calling extra attention to some special content or information -->
+			<!-- <h1> defines the highest level or most important heading in the HTML document -->
+			<!-- <p> represents a paragraph -->
+			<!-- <img src="" Specifies the path to the image, inside "" is the name of the image to be used -->
+			<!-- to add style from bootstrap, we add specific classes from bootstrap -->
+			<h1>Mark Gil DS. Arnaiz</h1>
+			<p>Hi! My name is Mark Gil and I love building things from scratch</p>
+			<img src="./images/FB.jpg" class="img-fluid">
+		</section>
+		<!-- end of section -->
+		<!-- end of landing -->
+		<!-- starting section of gallery -->
+		<section id="gallery" class="text-center jumbotron bg-dark text-white mt-3">
+			<!-- <h2> defines the second level heading in the HTML document -->
+			<!-- we can also create our own classes and define it's style using CSS -->
+			<div class="tools">
+				<h2>Languages I Speak</h2>
+						<!-- <ul> represents an unordered list of items, typically rendered as a bulleted list -->
+					<ul>
+						<!-- <li> used to represent an item in a list -->
+						<li>HTML</li>
+						<li>CSS</li>
+					</ul>
+			</div>
+			<div class="tools">
+				<h2>Tools I Use</h2>
+					<ul>
+						<!-- Technique: use Ctrl + Shift + D Copy a line to the next line -->
+						<li>Git Bash/Terminal</li>
+						<li>Sublime Text</li>
+						<li>Github</li>
+						<li>Google Chrome</li>
+					</ul>
+			</div>
+		</section>
+		<!-- end of section -->
+		<!-- end of gallery -->
+	</div>
+	<!-- end of division -->
+	<!-- Boostrap JS Dependencies -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+	<!-- end of Boostrap JS Dependencies -->
+</body>
+<!-- closing tag of the body, end of the HTML body -->
+</html>
+<!-- closing tag of the document, end of HTML Document -->
